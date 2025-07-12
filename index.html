@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment + Tools + Anime Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    input[type="text"], input[type="password"] {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #218838;
+    }
+    .dashboard {
+      display: none;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    .box {
+      background: #fff;
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin: 0 0 10px;
+    }
+    select, input[type="text"] {
+      width: 90%;
+      padding: 8px;
+      margin: 5px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .anime-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+      gap: 5px;
+    }
+    .anime-gallery img {
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .anime-gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container" id="loginBox">
+  <img src="https://files.catbox.moe/2utsl9.mp4" alt="Login Animation" style="width:100%; border-radius:10px;">
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<div class="dashboard" id="dashboardBox">
+  <div class="box">
+    <h2>Payment Info</h2>
+    <p>DANA: 082173490126</p>
+    <p>OVO: 082173490126</p>
+    <p>QRIS: <a href="https://wa.me/6282173490126" target="_blank">Klik untuk bayar via WA</a></p>
+  </div>
+
+  <div class="box">
+    <h2>Bug WA</h2>
+    <input type="text" placeholder="Nomor (628xxx)">
+    <input type="text" placeholder="PW: alya">
+    <input type="text" placeholder="Waifu: alya">
+    <select>
+      <option>invis-x</option>
+      <option>alya-hard</option>
+      <option>fc-invis</option>
+      <option>fc-beta</option>
+      <option>delay-invis</option>
+      <option>blank-invis</option>
+      <option>alya-blank</option>
+      <option>alya-combo</option>
+    </select>
+    <button>Jalankan Bug</button>
+  </div>
+
+  <div class="box">
+    <h2>Menu DDoS</h2>
+    <input type="text" placeholder="URL">
+    <input type="text" placeholder="PW: waifu alya">
+    <select>
+      <option>layer7</option>
+      <option>itcp</option>
+      <option>icmp</option>
+      <option>flood</option>
+      <option>axel-waifu</option>
+    </select>
+    <button>Mulai DDoS</button>
+  </div>
+
+  <div class="box">
+    <h2>Tools Attacker WA ☠️</h2>
+    <input type="text" placeholder="Nomor (628xxx)">
+    <input type="text" placeholder="PW: axeltressert">
+    <select>
+      <option>ban-wa</option>
+      <option>keno-medium</option>
+      <option>kenon-hard</option>
+      <option>kenon-manen</option>
+      <option>keno-manenbatu</option>
+      <option>keno-immpoible</option>
+    </select>
+    <button>Jalankan</button>
+  </div>
+
+  <div class="box">
+    <h2>Tools Deface</h2>
+    <input type="text" placeholder="URL">
+    <input type="text" placeholder="Port">
+    <input type="text" placeholder="Teks">
+    <select>
+      <option>defa-invis</option>
+      <option>defa-easy</option>
+      <option>deface-ddos</option>
+      <option>deface-☠️</option>
+    </select>
+    <button>Jalankan Deface</button>
+  </div>
+
+  <div class="box">
+    <h2>Dashboard Foto Anime</h2>
+    <img src="https://files.catbox.moe/hfd11r.jpeg" style="width:100%; border-radius:10px; margin-bottom:10px;">
+    <div class="anime-gallery">
+      <img src="https://files.catbox.moe/hepchl.jpeg" onclick="window.open('https://wa.me/6282173490126')" alt="">
+      <img src="https://files.catbox.moe/p0m0py.jpeg" onclick="window.open('https://wa.me/6282173490126')" alt="">
+      <img src="https://files.catbox.moe/zr1iod.jpeg" onclick="window.open('https://wa.me/6282173490126')" alt="">
+      <img src="https://files.catbox.moe/1m2uwu.jpeg" onclick="window.open('https://wa.me/6282173490126')" alt="">
+      <img src="https://files.catbox.moe/5v53jc.jpeg" onclick="window.open('https://wa.me/6282173490126')" alt="">
+      <img src="https://files.catbox.moe/otwajm.jpeg" onclick="window.open('https://wa.me/6282173490126')" alt="">
+      <img src="https://files.catbox.moe/ol9nb2.jpeg" onclick="window.open('https://wa.me/6282173490126')" alt="">
+      <img src="https://files.catbox.moe/r63vj4.jpeg" onclick="window.open('https://wa.me/6282173490126')" alt="">
+      <img src="https://files.catbox.moe/tk60gx.jpeg" onclick="window.open('https://wa.me/6282173490126')" alt="">
+      <img src="https://files.catbox.moe/3i9yyp.jpeg" onclick="window.open('https://wa.me/6282173490126')" alt="">
+      <img src="https://files.catbox.moe/v6rk3f.jpeg" onclick="window.open('https://wa.me/6282173490126')" alt="">
+    </div>
+  </div>
+</div>
+
+<script>
+function login() {
+  const u = document.getElementById('username').value;
+  const p = document.getElementById('password').value;
+  if (u && p) {
+    document.getElementById('loginBox').style.display = 'none';
+    document.getElementById('dashboardBox').style.display = 'block';
+  } else {
+    alert('Isi username dan password!');
+  }
+}
+</script>
+
+</body>
+  </html>
